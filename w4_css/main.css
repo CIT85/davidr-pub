@@ -17,3 +17,29 @@ a:visited {
 a:hover, a:active {
     color: #eee;
 }
+
+table {
+    width: 50%;
+    table-layout: fixed;
+}
+
+tr, th, td {
+    border: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.activity-header, .activity-cell {
+    width: 20%;
+}
+
+.description-header, .description-cell {
+    width: 60%;
+    word-wrap: break-word;
+}
+
+th {background-color: rgba(255, 255, 0, 0.418);
+color: #ffffff;}

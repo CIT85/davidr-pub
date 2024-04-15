@@ -36,6 +36,9 @@
                 <li>
                     <a href="#Climate">Climate</a>
                 </li>
+                <li>
+                    <a href="#Contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     
@@ -56,12 +59,27 @@
     <section id="Locations">
     <h2>What Famous Sites is Arizona Best Known For?</h2>
     <figure><img src="../w3/img/AntelopeCanyon.jpg"><figcaption>An AI generated image of the infamous Antelope Canyon</figcaption></figure>
-    <ol>
-        <li><h3>Grand Canyon</h3> - Famous for its breathtaking vistas and being one of the Seven Natural Wonders of the World.</li>
-        <li><h3>Antelope Canyon</h3>- Known for its stunning rock formations and vibrant light beams, a photographer's paradise.</li>
-        <li><h3>Monument Valley </h3> - Iconic landscape of towering sandstone buttes, a backdrop for many western films.</li>
-        <li><h3>Saguaro National Park </h3>- Home to the iconic Saguaro cactus, symbolizing the American Southwest's desert landscape.</li>
-    </ol>
+    
+    <table>
+        <th>Location</th>
+        <th>What Is It Famous For?</th>
+        <tr>
+            <td site="grand canyon">Grand Canyon</td>
+            <td>Famous for its breathtaking vistas and being one of the Seven Natural Wonders of the World.</td>
+        </tr>
+        <tr>
+            <td site="Antelope Canyon">Antelope Canyon</td>
+            <td>Known for its stunning rock formations and vibrant light beams, a photographer's paradise.</td>
+        </tr>
+        <tr>
+            <td site="monument valley">Monument Valley</td>
+            <td>Iconic landscape of towering sandstone buttes, a backdrop for many western films.</td>
+        </tr>
+        <tr>
+            <td site="Saguaro National Park">Saguaro National Park</td>
+            <td>Home to the iconic Saguaro cactus, symbolizing the American Southwest's desert landscape.</td>
+        </tr>
+    </table>
 </section>
 
 <hr>
@@ -69,28 +87,47 @@
 <section id="Activities">
     <h2>Outdoor Activities in Arizona</h2>
     <figure><img src="../w3/img/GCTrail.png" alt="a trail winding by the Grand Canyon"><figcaption>An AI generated image of a trail winding alongside the Grand Canyon.</figcaption></figure>
-    <ul>
-        <li>
-            <h3>Hiking</h3>
-            <p>Arizona offers a variety of trails for all skill levels, from the challenging hikes in the Grand Canyon to scenic trails in the Sonoran Desert.</p>
-        </li>
-        <li>
-            <h3>Rock Climbing</h3>
-            <p>With its diverse landscapes, Arizona is a popular destination for rock climbing enthusiasts. Popular climbing spots include Camelback Mountain and Granite Mountain.</p>
-        </li>
-        <li>
-            <h3>River Rafting</h3>
-            <p>The Colorado River and other waterways provide opportunities for exciting river rafting adventures. The Grand Canyon offers some of the most spectacular rafting trips in the world.</p>
-        </li>
-        <li>
-            <h3>Mountain Biking</h3>
-            <p>Numerous mountain biking trails can be found throughout the state, offering breathtaking views and challenging terrain. Sedona and Tucson are particularly popular destinations for mountain biking.</p>
-        </li>
-        <li>
-            <h3>Stargazing</h3>
-            <p>Arizona's clear skies and low light pollution make it an ideal location for stargazing and astronomy enthusiasts. The Lowell Observatory in Flagstaff is a renowned location for stargazing.</p>
-        </li>
-    </ul>
+    <table>
+        <tr>
+            <th class="activity-header">Activity</th>
+            <th class="description-header">Description</th>
+        </tr>
+        <tr>
+            <td class="activity-cell"> <activity activity="hiking">
+                Hiking</activity>
+            </td>
+            <td class="description-cell">Arizona offers a variety of trails for all skill levels, from the challenging hikes in the Grand Canyon to scenic trails in the Sonoran Desert.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="activity-cell"> <activity activity="Rock Climbing">
+                Rock Climbing</activity>
+            </td>
+            <td class="description-cell">With its diverse landscapes, Arizona is a popular destination for rock climbing enthusiasts. Popular climbing spots include Camelback Mountain and Granite Mountain.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="activity-cell"> <activity activity="River Rafting">River Rafting</activity>
+            </td>
+            <td class="description-cell">The Colorado River and other waterways provide opportunities for exciting river rafting adventures. The Grand Canyon offers some of the most spectacular rafting trips in the world.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="activity-cell"> <activity activity="Mountain Biking">Mountain Biking</activity>
+            </td>
+            <td class="description-cell">Numerous mountain biking trails can be found throughout the state, offering breathtaking views and challenging terrain. Sedona and Tucson are particularly popular destinations for mountain biking.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="activity-cell"> <activity activity="Stargazing">Stargazing</activity>
+            </td>
+            <td class="description-cell">Arizona's clear skies and low light pollution make it an ideal location for stargazing and astronomy enthusiasts. The Lowell Observatory in Flagstaff is a renowned location for stargazing.</td>
+        </tr>
+    </table>
             </section>
 
             <hr>
@@ -109,6 +146,33 @@
             <h3>Best Time to Visit</h3>
             <p>Spring and fall are considered the best times to visit Arizona, with pleasant temperatures and clear skies, making it ideal for outdoor activities and sightseeing. Winter is also a popular time to visit, especially for snowbirds looking to escape colder climates.</p>
         </section>
+        <hr>
+
+        <article id="Contact">
+            <h2>Contact Me</h2>
+            <p>I'd like to hear about any places in Arizona you'd like to visit!</p>
+            <p>
+            <form action="https://httpbin.org/get" method="get">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your First Name" autocomplete="on" required autofocus></p>
+                <p><label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Your Last Name" autocomplete="on" required></p>
+                <p><label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required></p>
+                <p><label for="Activity">Favorite Activity:</label>
+                <input type="tel" name="Activity" id="Activity" placeholder="i.e. Hiking"></p>
+                <p>
+                    <label for="Landmark">Landmark You'd Most Like To Visit:</label>
+                    <select name="Landmark" id="Landmark">
+                        <option value="grandcanyon">Grand Canyon</option>
+                        <option value="antelopecanyon">Antelope Canyon</option>
+                        <option value="monumentvalley">Monument Valley</option>
+                        <option value="saguaro">Saguaro National Park</option>
+                    </select>
+                </p>
+            </form>
+        </article>
+
         <hr>
         &lt;&lt;&lt; &copy; <a href="about.html">David Remigio</a> &gt;&gt;&gt;
         <p>
