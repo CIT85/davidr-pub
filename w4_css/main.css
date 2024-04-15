@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgb(66, 13, 13);
+    background-color: #6f1a07;
 color: whitesmoke;
 }
 
@@ -24,7 +24,7 @@ table {
 }
 
 tr, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #12263A;
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     padding: 10px;
@@ -41,5 +41,5 @@ tr, th, td {
     word-wrap: break-word;
 }
 
-th {background-color: rgba(255, 255, 0, 0.418);
-color: #ffffff;}
+th {background-color: #12263a;
+color: #EAC435;}
