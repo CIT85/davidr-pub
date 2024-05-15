@@ -147,9 +147,43 @@ img{
     height: auto;
 }
 
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #C874D9;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #453ADE;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1B1F3B;
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #C874D9;
+border-radius: 5px;
+font-family: 'Arial', Sans-serif;
+}
 /* utility class styling for buttons to make them more visually appealing and go along with the theme of the website. */
 
-.button {
+button {
     background-color: #B14AED;
     color: #ffffff;
     padding: 10px 15px;
@@ -158,7 +192,7 @@ img{
     cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     background-color: #C874D9;
 }
 
