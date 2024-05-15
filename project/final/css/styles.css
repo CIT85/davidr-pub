@@ -1,0 +1,317 @@
+/* Reset and Box Sizing
+This is to help control the layout and prevent unexpected spacing. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This is to set up the main font, text color, and background color for the entire website. I used a light pink background and deep blue text so its easy to read. */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color : #1B1F3B;
+    background-color: #E1BBC9;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* This sets the color for the headers background to a bright blue to make it capture attention. */
+
+header {
+    background-image: url(/project/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #E1BBC9;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    background-color: #ffffff;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+/* styles the navigation menu to go along with the theme of the website. */
+
+nav {
+    background-color: #1B1F3B;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #E1BBC9;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #B14AED;
+}
+
+/* This styles the main area with a white background and light purple border to go along with the color palette. */
+
+main {
+    background: white;
+    padding: 20px;
+    border: 1px solid #C874D9;
+    flex-grow: 1;
+    margin-bottom: 60px;
+}
+
+/* added table style for the index.html. */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #C874D9;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E1BBC9;
+}
+
+tbody tr:hover {
+    background-color: #C874D9;
+    color: white;
+}
+
+/* the footer follows the same style as the nav to tie it together. */
+
+footer {
+    background-color: #1B1F3B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Sets the heading colors to a bright purple to make them stand out. */
+
+h1,h2,h3 {
+    color: #453ADE;
+}
+
+a {
+    color: #B14AED;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C874D9;
+}
+
+ul {list-style-type: square;
+margin-left: 20px;}
+
+.image-caption {
+    color: #1B1F3B;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* utility class styling for buttons to make them more visually appealing and go along with the theme of the website. */
+
+.button {
+    background-color: #B14AED;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #C874D9;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices (<481px) */
+@media (max-width: 480px){
+    body {padding: 10px;}
+
+
+header {
+    padding: 60px 10px
+}
+
+header h1 {
+    padding: 15px;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+main {
+    padding: 15px;
+    margin-bottom: 70px;
+}
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width:481px) and (max-width: 768px)
+{
+    body{
+        padding: 15px;
+    }
+
+    header {
+        padding: 80px 15px;
+    }
+
+    header h1 {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    main {
+        padding: 20px;
+        margin-bottom: 70px;
+    }
+}
+/* Laptops (769px - 1024px) */
+
+@media (min-width:769px) and (max-width: 1024px)
+{
+    body{
+        padding: 20px;
+    }
+
+    header {
+        padding: 100px 20px;
+    }
+
+    header h1 {
+        padding: 25px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 25px;
+        margin-bottom: 60px;
+    }
+}
+
+/* Desktops */
+
+@media (min-width:1025px) and (max-width: 1200px)
+{
+    body{
+        padding: 25px;
+    }
+
+    header {
+        padding: 120px 25px;
+    }
+
+    header h1 {
+        padding: 30px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    main {
+        padding: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+/* Extra Large Screens (1021px or greater)*/
+
+@media (min-width:1201px)
+{
+    body{
+        padding: 30px;
+    }
+
+    header {
+        padding: 140px 30px;
+    }
+
+    header h1 {
+        padding: 35px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0px 20px;
+    }
+
+    main {
+        padding: 35px;
+        margin-bottom: 60px;
+    }
+}
